@@ -1,0 +1,58 @@
+{
+    "name": "benmacha/ticket-bundle",
+    "description": "This Bundle provides multilingual ticketing functionality for Symfony applications.",
+    "keywords": [
+        "ticket",
+        "ticketing",
+        "help desk",
+        "helpdesk",
+        "support",
+        "multilingual",
+        "english",
+        "french",
+        "russian",
+        "german",
+        "spanish"
+    ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Platt",
+            "email": "github@ofdan.co.uk",
+            "homepage": "http://www.hackzilla.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "symfony/symfony": "^2.8 || ^3.0",
+        "sensio/framework-extra-bundle": "^5.0.0",
+        "hackzilla/ticket-message": "~0.3",
+        "white-october/pagerfanta-bundle": "^1.0.5"
+    },
+    "suggest": {
+        "doctrine/orm": "For using Doctrine ORM for ticket storage",
+        "doctrine/doctrine-bundle": "For using Doctrine ORM/ODM for ticket storage",
+        "doctrine/mongodb-odm-bundle": "For using Mongodb ODM for ticket storage",
+        "vich/uploader-bundle": "Allow attaching files to ticket messages"
+    },
+    "require-dev": {
+        "symfony/form": "^2.8 || ^3.0",
+        "symfony/phpunit-bridge": "^2.8 || ^3.0",
+        "phpunit/phpunit": "^5.4 || ^6.1",
+        "doctrine/orm": "^2.4.8",
+        "doctrine/doctrine-bundle": "~1.4",
+        "sllh/php-cs-fixer-styleci-bridge": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hackzilla\\Bundle\\TicketBundle\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}

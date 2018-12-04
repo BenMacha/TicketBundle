@@ -1,0 +1,29 @@
+hackzilla_ticket:
+    path:  /
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:index" }
+
+hackzilla_ticket_show:
+    path:  /{ticketId}/show
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:show" }
+
+hackzilla_ticket_new:
+    path:  /new
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:new" }
+
+hackzilla_ticket_create:
+    path:  /create
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:create" }
+    methods: post
+
+hackzilla_ticket_delete:
+    path:  /{ticketId}/delete
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:delete" }
+    methods: post|delete
+
+hackzilla_ticket_reply:
+    path:  /{ticketId}/reply
+    defaults: { _controller: "HackzillaTicketBundle:Ticket:reply" }
+
+hackzilla_ticket_attachment:
+    path:  /attachment/{ticketMessageId}/download
+    defaults: { _controller: "HackzillaTicketBundle:TicketAttachment:download" }
